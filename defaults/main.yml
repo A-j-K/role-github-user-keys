@@ -1,8 +1,7 @@
 ---
-linux_user: ubuntu
-
 github_users:
-  - username: A-j-K
+  - github_user: A-j-K
+    linux_user: ubuntu
     real: andy.kirkham
     state: present
 

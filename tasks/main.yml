@@ -1,8 +1,8 @@
 ---
 - name: Add GH keys
   authorized_key:
-    user: "{{linux_user}}"
-    key: "https://github.com/{{item.username}}.keys"
+    user: "{{item.linux_user}}"
+    key: "https://github.com/{{item.github_user}}.keys"
     state: "{{item.state}}"
   with_items: "{{github_users}}"
 
